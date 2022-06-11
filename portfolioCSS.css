@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.navList{
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+  /*border: 2px solid red;*/
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 30px 15px 30px;
+  width: 15%;
+  text-align: right;
+  /*border: 2px solid green;*/
+  font-family: 'Bebas Neue', cursive;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-style: normal;
+  color: white;
+}
+
+.mainHeader {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-size: 100vw 100vh;
+}
+
+h1 {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: normal;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+footer {
+  background-image: url("image.jpg");
+}
+
+.myPhoto{
+  float: none;
+}
+
+.aboutMe p{
+  display: inline-block;
+  /*flex-direction: column;*/
+  width: 400px;
+  text-align: justify;
+  margin: 20px;
+  mso-font-info-type: auto;
+  font-size: 20px;
+}
+
+.aboutMe{
+  display: flex;
+  flex-direction: row;
+  flex-shrink: initial;
+  padding: 20px;
+  margin: 20px;
+}
+
+.aboutMe h2{
+  text-align: center;
+}
+
+.portfolioDiv{
+  display: flex;
+}
+
+.portfolioDiv figure img{
+  height: 500px;
+  width: 50vw;
+}
+
+.popub1, .popub2{
+  position:absolute;
+  padding:20px;
+  border:double black 5px;
+  border-radius:5px;
+  margin-left:550px;
+  margin-bottom:50px;
+  display: none;
+// background:url("https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg");
+  background:white;
+  text-align:center;
+  z-index:2;
+  top: 150vh;
+  width: 500px;
+
+
+}
+.popub1 p,.popub2 p {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.popub1 h1, .popub2 h1{
+  color: black;
+}
+
+.open-widow {
+  margin-left: 200px;
+}
+
+.open-widow2 {
+  margin-left: 200px;
+}
+
+.popub1 a, .popub2 a{
+  color: blueviolet;
+}
+
+.hamburger {
+  right: 3vw;
+  position: absolute;
+  display:none;
+
+  border-bottom: 10.5px double white;
+  border-top: 3.5px solid white;
+  height: 4px;
+  width: 25px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.burgerNavList {
+  top: 5vh;
+  right: 1vw;
+  position: absolute;
+  /*display:inline-block;*/
+  display: none;
+}
+
+.burgerNavList li {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 900px) {
+  .hamburger {
+      display: inline-block;
+  }
+  .navList{
+      display: none;
+  }
+}
+/*.hamburger div {*/
+/*    background:#000;*/
+/*    height:4px;*/
+/*    margin:4px 0;*/
+/*    width:100%;*/
+/*}*/
